@@ -1,0 +1,118 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f2f6f9;
+  color: #233044;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f2f6f9;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.hero h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin-top: 0;
+  color: #425266;
+  line-height: 1.5;
+}
+
+.factory {
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(29, 43, 68, 0.12);
+}
+
+.factory-svg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.windows rect {
+  fill: #f9e87e;
+}
+
+.feature rect,
+.feature circle,
+.feature path {
+  fill: #95a9c4;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.feature text {
+  font-weight: 700;
+  fill: #1b2a41;
+  font-size: 20px;
+}
+
+.hotspot {
+  cursor: pointer;
+}
+
+.hotspot:focus-visible .feature rect,
+.hotspot:focus-visible .feature circle,
+.hotspot:focus-visible .feature path,
+.hotspot:hover .feature rect,
+.hotspot:hover .feature circle,
+.hotspot:hover .feature path,
+.hotspot.active .feature rect,
+.hotspot.active .feature circle,
+.hotspot.active .feature path {
+  fill: #2e7ad3;
+  transform: translateY(-2px);
+}
+
+.feature-ccus rect:nth-of-type(2) {
+  fill: #c4d4ea;
+}
+
+.feature-elektrificatie rect:nth-of-type(2) {
+  fill: #c4d4ea;
+}
+
+.info {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #f4f7fb;
+  border: 1px solid #dfe7f2;
+}
+
+.info h2 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.info p {
+  margin: 0;
+  color: #2b3b50;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 24px 16px 40px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
